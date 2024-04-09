@@ -22,17 +22,22 @@
           </v-col> </v-row
       ></template>
       <v-card-actions>
-        <v-btn rounded="xl" variant="outlined" size="small" block
+        <v-btn
+          rounded="xl"
+          variant="outlined"
+          size="small"
+          block
+          @click="store.sort()"
           >Generate</v-btn
         ></v-card-actions
       >
     </v-card>
-    {{ testData }}
+    {{ result }}
   </v-container>
 </template>
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
 import { useIntervallStore } from "~/stores/store";
 const store = useIntervallStore();
-const { count, testData } = storeToRefs(store);
+const { count, testData, result } = storeToRefs(store);
 </script>
