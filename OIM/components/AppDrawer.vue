@@ -1,10 +1,5 @@
 <template>
   <v-navigation-drawer theme="dark" permanent rail>
-    <v-list-item
-      prepend-avatar="https://randomuser.me/api/portraits/women/75.jpg"
-      nav
-    ></v-list-item>
-
     <v-divider></v-divider>
 
     <v-list density="compact" nav>

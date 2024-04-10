@@ -3,7 +3,8 @@ import { compareIntervalValue } from "~/utils/sortInterval";
 
 export const useIntervallStore = defineStore("intervall", {
   state: () => ({
-    count: 0 as number,
+    count: 5 as number,
+    limit: 30 as number,
     testData: [
       [25, 30],
       [2, 19],
@@ -19,10 +20,19 @@ export const useIntervallStore = defineStore("intervall", {
     decrement() {
       this.count--;
     },
-    sort() {
+    resetGenerator() {
+      this.limit = 30;
+      this.count = 5;
+    },
+    clearData() {
+      this.testData = [];
+      this.result = [];
+    },
+    resolveTestData() {
       this.result = mergeOverlappingIntervals(this.testData);
-      // this.testData.sort(compareIntervalValue);
+    },
+    generateRandomTestData() {
+      this.testData = randomTestData(this.count);
     },
   },
-  // other options...
 });
