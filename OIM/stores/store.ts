@@ -1,38 +1,33 @@
 import { defineStore } from "pinia";
-import { compareIntervalValue } from "~/utils/sortInterval";
 
 export const useIntervallStore = defineStore("intervall", {
   state: () => ({
-    count: 5 as number,
-    limit: 30 as number,
+    amount: 5 as number, //Amount of test data
+    limit: 30 as number, //test data range 0 - 30 to randomize
     testData: [
       [25, 30],
       [2, 19],
       [14, 23],
       [4, 8],
-    ] as [number, number][],
-    result: [] as [number, number][],
+    ] as [number, number][], //unsorted generated test data
+    result: [] as [number, number][], //result after sorting and computing
   }),
   actions: {
     increment() {
-      this.count++;
+      this.amount++;
     },
     decrement() {
-      this.count--;
+      this.amount--;
     },
     resetGenerator() {
       this.limit = 30;
-      this.count = 5;
-    },
-    clearData() {
-      this.testData = [];
-      this.result = [];
+      this.amount = 5;
     },
     resolveTestData() {
       this.result = mergeOverlappingIntervals(this.testData);
     },
     generateRandomTestData() {
-      this.testData = randomTestData(this.count);
+      this.testData = randomTestData(this.amount, this.limit);
     },
   },
 });

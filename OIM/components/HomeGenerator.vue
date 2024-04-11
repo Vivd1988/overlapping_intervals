@@ -17,10 +17,11 @@
                   color="red"
                   icon="mdi-minus"
                   @click="store.decrement()"
+                  data-testid="decrement"
                 ></v-btn>
               </v-col>
               <v-col cols="auto">
-                <h1>{{ count }}</h1>
+                <h1 title="Amount of test data">{{ amount }}</h1>
               </v-col>
               <v-col cols="auto">
                 <v-btn
@@ -28,6 +29,7 @@
                   color="red"
                   icon="mdi-plus"
                   @click="store.increment()"
+                  data-testid="increment"
                 ></v-btn> </v-col></v-row
           ></v-col>
         </v-row>
@@ -77,5 +79,5 @@
 import { storeToRefs } from "pinia";
 import { useIntervallStore } from "~/stores/store";
 const store = useIntervallStore();
-const { count, testData, result, limit } = storeToRefs(store);
+const { amount, result, limit } = storeToRefs(store);
 </script>

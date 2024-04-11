@@ -11,8 +11,9 @@
       </v-card-text>
       <v-card-actions>
         <v-btn
+          color="blue"
           rounded="xl"
-          variant="outlined"
+          variant="flat"
           size="small"
           block
           @click="store.resolveTestData()"

@@ -3,7 +3,11 @@
     ><v-card class="mx-auto" width="400">
       <v-toolbar color="green" dense flat>
         <v-toolbar-title>
-          <span class="text-subheading">RESULT</span>
+          <span
+            title="Result after computing the test data"
+            class="text-subheading"
+            >RESULT</span
+          >
         </v-toolbar-title>
       </v-toolbar>
       <v-card-text>
