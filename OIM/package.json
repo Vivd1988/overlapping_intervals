@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "unit-test": "vitest run",
-    "e2e-test": "playwright test"
+    "e2e-test": "playwright test --project=e2e_tests --debug"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
