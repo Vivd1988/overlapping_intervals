@@ -1,5 +1,7 @@
 # Coding Task 2
 
+![Splashscreen](./image/title.png)
+
 Hier befindet sich die Lösung der Coding Task 2 - Aufgabe.
 
 ## Gliederung
@@ -15,7 +17,7 @@ Hier befindet sich die Lösung der Coding Task 2 - Aufgabe.
 1. Bearbeitungszeit
 
 - Algorithmus und Berechnungen: Ungefähr 30 minuten
-- Programmierung frontend, funktionen und tests: ca 5 Stunden mit Pausen dazwischen dazwischen. Es wurde nicht durchgängig an einem Stück dran gearbeitet
+- Programmierung frontend, funktionen und tests: ca 5 Stunden mit Pausen dazwischen. Es wurde nicht durchgängig an einem Stück dran gearbeitet
 
 2. Programmiersprache
 
