@@ -17,7 +17,7 @@ Hier befindet sich die Lösung der Coding Task 2 - Aufgabe.
 1. Bearbeitungszeit
 
 - Algorithmus und Berechnungen: Ungefähr 30 minuten
-- Programmierung frontend, funktionen und tests: ca 5 Stunden mit Pausen dazwischen. Es wurde nicht durchgängig an einem Stück dran gearbeitet
+- Programmierung Frontend, Funktionen und Tests: ca 5 Stunden mit Pausen dazwischen. Es wurde nicht durchgängig an einem Stück dran gearbeitet
 
 2. Programmiersprache
 
@@ -31,7 +31,7 @@ Vorbemerkung: So eine ähnliche Aufgabe musste ich in meinem Studium als Zulassu
 
 Diese Aufgabe kann mithilfe eines Stacks gelöst werden, wo dann die Eingabeliste durchiteriert von vorne bis hinten mit dem obersten Element des Stacks verglichen wird. Vorher muss die Liste aufsteigend sortiert werden.
 
-Verglichen werden der Endwert des Tuples vom obersten Stackelement mit dem Start- und Endwert vom jeweiligen Listenelement. Ist der Endwert vom obersten Stackelement kleiner als der Startwert des zu bearbeitenden Listenlements, so wird das Listenelement sofort als neues Topelement in den Stack gepushed. Ist es nicht der Fall, so wird das der Endwert des Topstack-Elements mit dem Endwert des Listenelements verglichen. Ist der Endwert des Topelements kleiner als der Endwert des Listenelements, so wird der Endwert des Topstacks mit dem Endwert des Listenelements ersetzt,
+Verglichen werden der Endwert des Tuples vom obersten Stackelement mit dem Start- und Endwert vom jeweiligen Listenelement. Ist der Endwert vom obersten Stackelement kleiner als der Startwert des zu bearbeitenden Listenlements, so wird das Listenelement sofort als neues Topelement in den Stack gepushed. Ist es nicht der Fall, so wird das der Endwert des Topstack-Elements mit dem Endwert des Listenelements verglichen. Ist der Endwert des Topelements kleiner als der Endwert des Listenelements, so wird der Endwert des Topstacks mit dem Endwert des Listenelements ersetzt
 
 ## Rahmendaten
 
@@ -63,7 +63,7 @@ Das Projekt besteht aus 3 Widgets.
    - durch das Einstellen von Anzahl der Testdaten und die Obergrenze für den Zahlenwert mit denen Zufallszahlen generiert werden, können dann Zeitintervalle zufällig erstellt werden
    - ist eine manuelle Eingabe nötig, so kann diese separat im Unit-Test eingegeben werden. Ein Testbeispiel liegt bei "tests/unit/function" und kann auch zum testen ausgeführt werden
 2. Testdatenanzeige
-   - hier werden die Testendaten angezeigt. Mit dem Button kann dort das Merging gestartet werden.
+   - hier werden die Testdaten angezeigt. Mit dem Button kann dort das Merging gestartet werden.
 3. Ergebnisanzeige
    - hier wird das fertige Ergebnis angezeigt
 
